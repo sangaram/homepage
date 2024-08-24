@@ -1,0 +1,206 @@
+@import "../../globals.scss";
+
+.contact {
+    width: 100%;
+    padding: 60px 0px 130px;
+    background-color: #f8f9fa;
+
+    @media screen and (max-width: calc($lg-break-point - 1px)) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 12px;
+
+        @media screen and (min-width: $sm-break-point) {
+            max-width: 540px;
+        }
+
+        @media screen and (min-width: $md-break-point) {
+            max-width: 720px;
+        }
+
+        @media screen and (min-width: $lg-break-point) {
+            max-width: 960px;
+        }
+        
+        @media screen and (min-width: $xl-break-point) {
+            max-width: 1140px;
+        }
+
+        @media screen and (min-width: $xxl-break-point) {
+            max-width: 1320px;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-family: $font1;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: $main-color2;
+        }
+
+        .bar {
+            width: 50px;
+            height: 3px;
+            background-color: $main-color1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #272829;
+            font-family: $font3;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            gap: 24px;
+
+            @media screen and (max-width: calc($lg-break-point - 1px)) {
+                flex-direction: column;
+            }
+
+            .left {
+                width: 526px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                box-sizing: border-box;
+                padding: 30px;
+                background-color: white;
+                -moz-box-shadow: 0px 0px 15px -2px #4E4E4E;
+                -webkit-box-shadow: 0px 0px 15px -2px #4E4E4E; 
+                box-shadow: 0px 0px 15px -2px #4E4E4E;
+
+                @media screen and (max-width: calc($lg-break-point - 1px)) {
+                    width: 100%;
+                }
+
+                .left-item {
+                    display: flex;
+                    gap: 16px;
+
+                    .icon-div {
+                        width: 44px;
+                        height: 44px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $main-color7;
+                        color: $main-color1;
+                        border-radius: 100%;
+                        cursor: pointer;    
+
+                        .icon {
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        &:hover {
+                            background-color: $main-color1;
+                            color: white;
+                        }
+                    }
+
+                    .info-div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        
+
+                        h4 {
+                            font-size: 22px;
+                            font-family: $font1;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-family: $font3;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 30px;
+                box-sizing: border-box;
+                background-color: white;
+                -moz-box-shadow: 0px 0px 15px -2px #4E4E4E;
+                -webkit-box-shadow: 0px 0px 15px -2px #4E4E4E; 
+                box-shadow: 0px 0px 15px -2px #4E4E4E;
+
+                .name-email {
+                    display: flex;
+
+                    @media screen and (max-width: calc($lg-break-point - 1px)) {
+                        flex-direction: column;
+                    }
+                }
+
+                .field {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    width: 100%;
+                    padding: 0px 8px;
+
+                    span {
+                        font-size: 16px;
+                        font-family: $font3;
+                    }
+
+                    input {
+                        padding: 6px 12px;
+                        font-size: 14px;
+                        border: 1px solid #ced4da;
+                        color: #212529;
+                        line-height: 1.5;
+                        
+                        &:focus {
+                            outline: 1px solid $main-color1;
+                        }
+                    }
+
+                    textarea {
+                        height: 232px;
+                        padding: 10px 15px;
+                        border: 1px solid #ced4da;
+
+                        &:focus {
+                            outline: 1px solid $main-color1;
+                        }
+                    }
+                }
+
+                .submit {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    button {
+                        width: 155px;
+                        height: 44px;
+                        background-color: $main-color1;
+                        color: white;
+                        font-family: $font3;
+                        font-size: 16px;
+                        padding: 10px 24px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

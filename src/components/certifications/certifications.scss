@@ -1,0 +1,105 @@
+@import "../../globals.scss";
+
+.certifications {
+    padding: 60px 0px;
+    width: 100%;
+
+    @media screen and (max-width: calc($lg-break-point - 1px)) {
+        display: flex;
+        justify-content: center;
+    }
+
+    .certifications-container {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0px 12px;
+        width: 100%;
+
+        // @media screen and (min-width: $sm-break-point) {
+        //     max-width: 540px;
+        // }
+
+        // @media screen and (min-width: $md-break-point) {
+        //     max-width: 720px;
+        // }
+
+        // @media screen and (min-width: $lg-break-point) {
+        //     max-width: 960px;
+        // }
+
+        // @media screen and (min-width: $xl-break-point) {
+        //     max-width: 1140px;
+        // }
+
+        // @media screen and (min-width: $xxl-break-point) {
+        //     max-width: 1320px;
+        // }
+
+        p, ul, em {
+            font-size: 16px;
+            font-family: $font3, sans-serif;
+            color: #272829;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-family: $font1;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: $main-color2;
+        }
+
+        .bar {
+            width: 50px;
+            height: 3px;
+            background-color: $main-color1;
+            margin-bottom: 20px;
+        }
+
+        .certifications-board {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .certification {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: $font2;
+                }
+
+                .body {
+                    padding-left: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    
+                    .desc {
+                        font-size: 16px;
+                        font-family: $font3, sans-serif;
+                        color: #272829;
+                    }
+    
+                    a {
+                        text-decoration: none;
+                        color: $main-color1;
+                        font-family: $font3;
+                    }
+
+                    .provider {
+                        font-size: 16px;
+                        font-family: $font3, sans-serif;
+                        color: #272829;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

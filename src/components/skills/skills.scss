@@ -1,0 +1,82 @@
+@import "../../globals.scss";
+
+.skills {
+    padding: 60px 0px;
+    background-color: $main-color8;
+    // @media screen and (max-width: calc($lg-break-point - 1px)) {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+    .skills-container {
+        padding: 0px 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        // @media screen and (min-width: $sm-break-point) {
+        //     max-width: 540px;
+        // }
+
+        // @media screen and (min-width: $md-break-point) {
+        //     max-width: 720px;
+        // }
+
+        // @media screen and (min-width: $lg-break-point) {
+        //     max-width: 960px;
+        // }
+
+        // @media screen and (min-width: $xl-break-point) {
+        //     max-width: 1140px;
+        // }
+
+        // @media screen and (min-width: $xxl-break-point) {
+        //     max-width: 1320px;
+        // }
+
+        .section-title {
+            font-size: 32px;
+            font-family: $font1;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: $main-color2;
+        }
+
+        .bar {
+            width: 50px;
+            height: 3px;
+            background-color: $main-color1;
+            margin-bottom: 20px;
+        }
+
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            
+            .sub-section {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+
+                .sub-section-title {
+                    font-size: 20px;
+                    font-family: $font1;
+                    font-weight: 700;
+                }
+                
+                span {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    font-family: $font3;
+                }
+
+            }
+            
+            
+        }
+    }
+    
+}
