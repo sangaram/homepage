@@ -9,8 +9,19 @@ import Resume from './components/resume/Resume';
 import SideBar from './components/sidebar/SideBar';
 import Skills from './components/skills/Skills';
 import SwitchButton from './components/switchButton/SwitchButton';
+import ReactGA from 'react-ga4';
+import { useEffect } from 'react';
+
+const TRACKING_ID = "G-LJ7S129T9L";
+
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize(TRACKING_ID);
+    // Send pageview with a custom path
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: "Homepage" });
+  }, [])
+
   return (
     <div className="app">
       <div className='container'>
