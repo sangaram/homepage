@@ -72,10 +72,10 @@ const Resume = () => {
                 <div className="resume-container-right">
                     <h3 className="resume-title">Professional Experience</h3>
                     <ResumeItem
-                        image={"CEA-List.jpeg"}
+                        image={"logo_list.png"}
                         title="GenAI Research Intern in Computer Vision"
                         start="April 2024"
-                        end="Present"
+                        end="October 2024"
                         location="CEA List, Palaiseau, France"
                     >
                         <strong>Subject:</strong> Automatic image generation for team sports matches.<br/>
